@@ -17,7 +17,7 @@ services:
       - LANGFUSE_ENABLE_EXPERIMENTAL_FEATURES=${LANGFUSE_ENABLE_EXPERIMENTAL_FEATURES:-false}
 
   db:
-    image: postgres:16.4
+    image: postgres:17
     restart: always
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U postgres"]
